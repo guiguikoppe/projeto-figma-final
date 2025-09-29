@@ -1,0 +1,524 @@
+html {
+  scroll-behavior: smooth;}
+:root {
+  --cor-preto: #222222;
+  --cor-branco: #ffffff;
+  --cor-amarelo: #ffc400;
+  --cor-amarelo-escuro: #ff9800;
+  --cor-cinza-claro: #f2f2f2;
+}
+
+footer{
+    justify-content: space-around;
+    display: flex;  
+    background-color: #ffffff;
+}
+
+footer img{
+    height: 150px;
+    max-width: 440px;
+    padding: 10px;
+} 
+
+/* ==============================
+   RESET GLOBAL
+=================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor-cinza-claro);
+  color: var(--cor-preto);
+}
+
+/* ==============================
+   HEADER
+=================================*/
+.header {
+  background: var(--cor-preto);
+  color: var(--cor-branco);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: var(--cor-branco);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--cor-amarelo-escuro);
+}
+
+/* ==============================
+   BANNER PRINCIPAL
+=================================*/
+.conteudo {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  background: url("../imgs/Homem de cópia-espaço comemorando _ Foto Premium.jfif")
+    no-repeat right center / contain;
+}
+
+.estilotexto1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3em;
+  color: var(--cor-preto);
+  padding: 2rem;
+}
+
+.estilotexto1 a {
+  display: inline-block;
+  background: var(--cor-preto);
+  color: var(--cor-branco);
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.estilotexto1 a:hover {
+  background: var(--cor-branco);
+  color: var(--cor-preto);
+  border: 1px solid var(--cor-preto);
+}
+
+/* ==============================
+   PARCEIROS
+=================================*/
+.parceiros {
+  background: var(--cor-amarelo);
+  text-align: center;
+  padding: 20px;
+}
+
+.parceiros img {
+  width: 5vw;
+  height: auto;
+  border-radius: 5px;
+  margin: 1.5em;
+  transition: 0.3s;
+}
+
+.parceiros img:hover {
+  transform: scale(1.1);
+}
+
+/* ==============================
+   NEW ARRIVALS
+=================================*/
+.novidades {
+  text-align: center;
+  margin: 40px auto;
+}
+
+main{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ padding: 20px;
+ flex-wrap: wrap;
+}
+
+main p{
+  font-size: 35px;  
+}
+
+main img{
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+} 
+
+.novidades h1 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: antiquewhite;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  font-family: cursive;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* ==============================
+   PAYDAY
+=================================*/
+.payday-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: rgb(255, 190, 0);
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 612px;
+  border-radius: 20px;
+}
+
+.payday-section img {
+  max-width: 600px;
+  height: 600px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.payday-section .right h1 {
+  color: #4e3f09;
+  font-size: 50px;
+}
+
+.payday-section p {
+  font-size: 30px;
+  color: #333;
+}
+
+.payday-section h2 {
+  color: #725c00;
+  font-size: 30px;
+}
+
+.right{
+  font-size: 50px;
+}
+/* ==============================
+   FAVORITOS
+=================================*/
+.tit {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+  margin: 40px 0 20px 10px;
+}
+
+.cardsl {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cardl {
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  width: 30%;
+  font-size: 40px;
+}
+
+.cardl img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cardl button {
+  background: var(--cor-amarelo);
+  color: var(--cor-preto);
+  padding: 10px 20px;
+  border: 2px solid var(--cor-preto);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-size: 30px;
+}
+
+.cardl button:hover {
+  background: var(--cor-branco);
+  transform: scale(1.05);
+}
+
+/* ==============================
+   APP
+=================================*/
+.app {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cardss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cardd {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+}
+
+.carddd {
+  flex: 1;
+  min-width: 280px;
+}
+
+.cardd img {
+  width: 10%;
+  border-radius: 8px;
+}
+
+/* ==============================
+   PROMO SECTION
+=================================*/
+.promo-section {
+  background: #f7d75a;
+  text-align: center;
+  padding: 50px 20px;
+  color: #333;
+  width: 100%;
+  margin: 4px;
+  border-radius: 20px;
+  height: 500px;
+ min-height: 400px; ;
+}
+.promo-section p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.promo-section h1 {
+  font-size: 4em;
+  color: var(--cor-branco);
+  margin-bottom: 15px;
+}
+
+.email-signup {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.email-signup input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 3rem;
+}
+
+.email-signup button {
+  background: var(--cor-preto);
+  color: var(--cor-branco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+     font-size: 1rem;
+
+}
+
+/* ==============================
+   FOOTER FINAL
+=================================*/
+.footer-final {
+  background: var(--cor-preto);
+  color: var(--cor-branco);
+}
+
+.fashion-section {
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.fashion-section h2 {
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 70px;
+  margin: 0 10px;
+  transition: 0.3s;
+  height: 80px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-columns {
+  margin-left: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+
+}
+
+.footer-column{
+  padding: 5%;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+=================================*/
+
+/* Tablets e abaixo */
+@media screen and (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .estilotexto1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .conteudo {
+    justify-content: center;
+    text-align: center;
+    background: url("../imgs/download.jfif") no-repeat center/cover;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer img {
+    height: 100px;
+  }
+}
+
+/* Celulares grandes */
+@media screen and (max-width: 600px) {
+  main img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .payday-section {
+    flex-direction: column;
+    min-width: unset; /* remove trava */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cardsl {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardl {
+    width: 90%;
+  }
+
+  .app img {
+    width: 30%;
+    max-width: 200px;
+  }
+
+  .email-signup {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email-signup input {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+  }
+.promo-section{
+  font-size: 10px;
+}
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+    width: 100%;
+  }
+ .social-icons  {
+    width: 10%;
+  }
+}
+
+/* Celulares pequenos */
+@media screen and (max-width: 400px) {
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  .estilotexto1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+.social-icons img {
+    width: 20%;
+  }
+  .promo-section h1 {
+    font-size: 1.5rem;
+  }
+}
